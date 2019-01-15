@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Boletin_17">
+  <ClassDiagramComponents>
+    <Interface name="IPodeNadar" package="" visibility="public" xPosition="663.0" yPosition="57.0">
+      <Methods/>
+    </Interface>
+    <Interface name="IPodeMoverse" package="" visibility="public" xPosition="87.0" yPosition="57.0">
+      <Methods/>
+    </Interface>
+    <Class name="Gato.java" package="" visibility="public" xPosition="663.0" yPosition="608.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Mamifero.java" package="" visibility="public" xPosition="438.0" yPosition="51.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Papagaio" package="" visibility="public" xPosition="223.0" yPosition="377.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Interface name="IPodeVolar" package="" visibility="public" xPosition="223.0" yPosition="608.0">
+      <Methods/>
+    </Interface>
+    <Class name="Aves" package="" visibility="public" xPosition="65.0" yPosition="251.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Avestruz" package="" visibility="public" xPosition="17.0" yPosition="377.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Morcego" package="" visibility="public" xPosition="409.0" yPosition="377.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Felino" package="" visibility="public" xPosition="596.0" yPosition="273.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Tigre" package="" visibility="public" xPosition="458.0" yPosition="608.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Mamifero.java" target="IPodeMoverse"/>
+    <IsRelation name="is" source="Avestruz" target="Aves"/>
+    <IsRelation name="is" source="Gato.java" target="Felino"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Felino" target="IPodeNadar"/>
+    <IsRelation name="is" source="Tigre" target="Felino"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Papagaio" target="IPodeVolar"/>
+    <IsRelation name="is" source="Morcego" target="Mamifero.java"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Aves" target="IPodeMoverse"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Morcego" target="IPodeVolar"/>
+    <IsRelation name="is" source="Papagaio" target="Aves"/>
+    <IsRelation name="is" source="Felino" target="Mamifero.java"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
